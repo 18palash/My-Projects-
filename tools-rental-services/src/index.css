@@ -44,10 +44,6 @@ body {
 .main-body-container{
   width: auto;
   height: auto;
-  
-  border-radius: 5px;
-}
-.main-body-container{
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 25px;

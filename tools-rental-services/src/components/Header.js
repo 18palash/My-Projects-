@@ -1,4 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import banner1 from './PowerTools2.jpg';
+import banner2 from './PowerTools1.png';
 const Header = () => {
     return(
         <div>
@@ -8,16 +11,16 @@ const Header = () => {
                     <nav className="navbar navbar-inverse">
                         <div className="container-fluid">
                             <div className="navbar-header">
-                                <a className="navbar-brand" href="indexTool.html">Tool Rental Services</a>
+                                <Link className="navbar-brand" to="/">Tool Rental Services</Link>
                             </div>
                             <ul className="nav navbar-nav">
-                                <li className="active"><a href="indexTool.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact US</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="About">About</Link></li>
+                                <li><Link to="ContactUs">Contact US</Link></li>
                             </ul>
                             <ul className="nav navbar-nav navbar-right">
-                                <li><a href="signup.html"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                <li><a href="login.html"><span className="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                <li><Link href="SignUp"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                                <li><Link href="LogIn"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
                             </ul>
                         </div>
                     </nav>                    
@@ -37,11 +40,11 @@ const Header = () => {
                         {/* Wrapper for slides */}
                         <div className="carousel-inner">
                             <div className="item active">
-                                <img src="images\PowerTools1.png" alt="" />
+                                <img src={banner1} alt="Banner" />
                             </div>
                                                     
                             <div className="item">
-                                <img src="images\PowerTools2.jpg" alt="" />
+                                <img src={banner2} alt="Banner" />
                             </div>                              
                         </div>
                                             
